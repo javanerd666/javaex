@@ -1,6 +1,22 @@
-*.class
+import java.util.Scanner;
 
-# Package Files #
-*.jar
-*.war
-*.ear
+public class EnterMinus1ToEndProgram {
+
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+
+        //get number from user.
+        System.out.print("Enter integers(-1 for end): ");
+        String out = " ";
+
+        int inum=input.nextInt();
+        while(inum != -1)
+        {
+            out = out +(inum+" ");
+            inum=input.nextInt();
+
+        }
+        System.out.println(out);
+    }
+
+}
